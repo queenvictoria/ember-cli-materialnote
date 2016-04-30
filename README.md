@@ -1,26 +1,36 @@
-# Ember-cli-materialnote
+# ember-cli-materialnote
 
-This README outlines the details of collaborating on this Ember addon.
+An Ember component for [materialNote](https://github.com/Cerealkillerway/materialNote).
+
+Note that this is in alpha right now. Feedback is appreciated.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-cli-materialnote`
 
-## Running
+## How to Use
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+{{ember-materialnote body=body}} // uses default options
 
-## Running Tests
+let airPopover = [['color', ['color']], ['font', ['bold', 'underline', 'clear']]];
+{{ember-materialnote body=body airMode=true airPopover=airPopover}} // uses air mode
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+let toolBar = [['fonts', ['fontsize', 'fontname']], ['color', ['color']]];
+{{ember-materialnote body=body toolBar=toolBar}}
 
-## Building
+These are the available options:
 
-* `ember build`
+| Option | default |
+--------------------
+| toolbar | [] |
+| height | 500 |
+| airMode | false |
+| airPopover | [] |
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+See the [materialNote demo](http://www.web-forge.info/projects/materialNote) for more information.
+
+## Known Issues
+
+MaterialNote uses an older version of summernote, so some parts of the summernote API are unavailable. See [this issue](https://github.com/Cerealkillerway/materialNote/issues/8) in materialNote's repo for more information.
+
+This uses ember-cli-materialize version 0.19.5. As of now, they're working on v1, but that's in alpha at the moment.
