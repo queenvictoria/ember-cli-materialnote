@@ -34,3 +34,13 @@ See the [materialNote demo](http://www.web-forge.info/projects/materialNote) for
 MaterialNote uses an older version of summernote, so some parts of the summernote API are unavailable. See [this issue](https://github.com/Cerealkillerway/materialNote/issues/8) in materialNote's repo for more information.
 
 This uses ember-cli-materialize version 0.19.5. As of now, they're working on v1, but that's in alpha at the moment.
+
+Temporarily, you also need to add this to your ember-cli-build.js:
+
+    var app = new EmberApp(defaults, {
+      sassOptions: {
+        includePaths: [
+          'bower_components/materialize/sass'
+        ]
+      }
+    });
