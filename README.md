@@ -24,6 +24,7 @@ These are the available options:
 --------------------
 | toolbar | [] |
 | height | 500 |
+| minHeight | 100 |
 | airMode | false |
 | airPopover | [] |
 
