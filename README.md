@@ -22,11 +22,15 @@ These are the available options:
 
 | Option | default |
 --------------------
-| toolbar | [] |
+| toolbar | |
 | height | 500 |
 | minHeight | 100 |
 | airMode | false |
-| airPopover | [] |
+| airPopover | // only displays when airMode is true |
+| followingToolbar | true |
+| defaultBackColor | |
+| defaultTextColor | |
+
 
 See the [materialNote demo](http://www.web-forge.info/projects/materialNote) for more information.
 
