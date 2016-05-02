@@ -10,6 +10,7 @@ Note that this is in alpha right now. Feedback is appreciated.
 
 ## How to Use
 
+```
 {{ember-materialnote body=body}} // uses default options
 
 let airPopover = [['color', ['color']], ['font', ['bold', 'underline', 'clear']]];
@@ -17,19 +18,19 @@ let airPopover = [['color', ['color']], ['font', ['bold', 'underline', 'clear']]
 
 let toolBar = [['fonts', ['fontsize', 'fontname']], ['color', ['color']]];
 {{ember-materialnote body=body toolBar=toolBar}}
+```
 
 These are the available options:
 
-| Option | default |
---------------------
-| toolbar | |
+| Option | Default |
+| --- | --- |
+| toolbar | // materialNote's default |
 | height | 500 |
 | airMode | false |
 | airPopover | // only displays when airMode is true |
-| followingToolbar | true |
-| defaultBackColor | |
-| defaultTextColor | |
-
+| followingToolbar | false |
+| defaultBackColor | // materialNote's default |
+| defaultTextColor | // materialNote's default |
 
 See the [materialNote demo](http://www.web-forge.info/projects/materialNote) for more information.
 
