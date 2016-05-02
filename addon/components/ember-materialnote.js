@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   layout,
 
   height: 500,
-  minHeight: 100,
   airMode: false,
   followingToolbar: true,
   options: {},
@@ -14,7 +13,6 @@ export default Ember.Component.extend({
   didReceiveAttrs() {
     let toolbar = this.get('toolbar');
     let height = this.get('height');
-    let minHeight = this.get('minHeight');
     let airMode = this.get('airMode');
     let defaultBackColor = this.get('defaultBackColor');
     let followingToolbar = this.get('followingToolbar');
@@ -24,7 +22,7 @@ export default Ember.Component.extend({
       airPopover = this.get('airPopover');
     }
 
-    this.set('options', { toolbar, minHeight, height, airMode, airPopover, defaultBackColor, followingToolbar, defaultTextColor });
+    this.set('options', { toolbar, height, airMode, airPopover, defaultBackColor, followingToolbar, defaultTextColor });
   },
   didInsertElement() {
     Ember.run.once('afterRender', () => {
