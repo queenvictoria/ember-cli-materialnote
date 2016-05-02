@@ -49,3 +49,10 @@ Temporarily, you also need to add this to your ember-cli-build.js:
         ]
       }
     });
+
+## Tasks
+
+- [x] Create initial release
+- [ ] Add a post install message that tells developers what they need to do next
+- [ ] Add actions (`on-update`, etc.)
+- [ ] Use Materialize CSS package instead of ember-cli-materialize (?)
