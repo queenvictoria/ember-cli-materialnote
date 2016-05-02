@@ -6,14 +6,8 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.sassOptions = {
-      includePaths: [
-        'bower_components/materialize/sass'
-      ]
-    };
-
-    app.import('bower_components/materialNote/js/ckMaterializeOverrides.js');
-    app.import('bower_components/materialNote/js/materialNote.min.js');
-    app.import('bower_components/materialNote/css/materialNote.css');
+    app.import(app.bowerDirectory + '/materialNote/js/ckMaterializeOverrides.js');
+    app.import(app.bowerDirectory + '/materialNote/js/materialNote.min.js');
+    app.import(app.bowerDirectory + '/materialNote/css/materialNote.css');
   }
 };
