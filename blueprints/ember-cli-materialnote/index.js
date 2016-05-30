@@ -6,12 +6,13 @@ module.exports = {
 
   afterInstall: function() {
     return this.addBowerPackageToProject('materialNote');
+    return this.addBowerPackageToProject('materialize');
   },
 
   beforeInstall: function() {
     return this.addAddonsToProject({
       packages: [
-        { name: 'ember-cli-materialize', target: '0.19.5' }
+        { name: 'ember-materialize-shim', target: '0.1.6' }
       ]
     });
   }
